@@ -1,0 +1,6 @@
+services:
+  - type: web
+    name: task-api
+    env: python
+    buildCommand: "./build.sh"
+    startCommand: "gunicorn taskapi.wsgi:application"
